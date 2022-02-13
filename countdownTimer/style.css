@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300);
+
+
+* {
+  margin: 0;
+  font-family: Open Sans, Arial;
+}
+
+html, body{
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-image: linear-gradient(162deg, red , black 31%);   /*using gradients*/
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  font-size: 15px;
+  padding-right: 15px;
+  text-decoration: underline;
+}
+
+h1 {
+  display: block;
+  background-image: linear-gradient(160deg, red , black 20%);   /*using gradients*/
+  margin: 0 auto;
+  color: #f1c650;
+  text-shadow: 0 0 0px rgb(219, 91, 68), 0 0 50px #f2c94c;
+  text-align: center;
+  font-family: "Pacifico";
+  font-size: 5em;
+}
+
+main{
+  height: 100%;
+  background-image: linear-gradient(160deg, black 55%, red);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 7.5%;
+}
+
+.timer {
+  height:85px;
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  font-family: sans-serif;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 30px;
+  background-color: rgb(241, 144, 18);
+}
+
+.timer__part {
+  text-align: center;
+  padding-left: 20px;
+  font-size: 70px;
+  font-weight: bolder;
+  text-shadow: 0 0 50px rgb(245, 3, 3), 0 0 10px #ff0000;
+}
+
+.timer__btn {
+  width: 70px;
+  height: 70px;
+  margin-left: 60px;
+  margin-top: 10px;
+  border-radius: 50%;
+  font-size: xx-large;
+  border: 2px solid rgb(7, 5, 158);
+  color: white;
+  background: #8802f5f6;
+  cursor: pointer;
+}
+
+.timer__btn--start {
+  background: #16a304;
+  border: 2px solid rgb(4, 49, 4);
+}
+
+.timer__btn--stop {
+  background: #ff0202;
+  border: 2px solid rgb(4, 159, 231);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gold Stopwatch</title>
+
+    <link rel="icon" type="image/jpg" href="icon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- library for popular icons -->
+  </head>
+
+  <body>
+
+    <div class="topnav">
+      <a href="#" onclick="close_window();return false;">Exit Fullscreen</a>
+    </div>
+    
+    <div class="stopwatch">
+      <h1><span class="gold">Classroom___Stopwatch </span></h1>
+    </div>
+
+    <section>
+      <div class="circle">
+        <span class="time" id="display">00:00:00</span>
+      </div>
+
+      <div class="controls">
+        <button class="buttonPlay">
+          <img id="playButton" src="icons/play-button.svg"/>
+          <img id="pauseButton" src="icons/pause-button.svg"/>
+        </button>
+
+        <button class="buttonReset">
+          <img id="resetButton" src="icons/reset-button.svg" />
+        </button>
+      </div>
+    </section>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

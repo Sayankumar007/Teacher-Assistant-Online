@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Session_timer</title>
+
+  <link rel="icon" type="image/jpg" href="icon.png" />
+
+  <link rel="stylesheet" href="/session timer/style.css" />
+
+  <script> window.console = window.console || function (t) { };</script>
+
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+
+</head>
+
+<body translate="no">
+
+  <div class="topnav">
+    <a href="#" onclick="close_window();return false;">Exit Fullscreen</a>
+  </div>
+
+  <h1>Session_and_Break_Timer</h1>
+
+  <main ng-app="Application" ng-controller="MainCtrl">
+
+
+    <header>
+
+      <div class="session">
+
+
+        <div class="breakCtrl">
+          <p>break length</p>
+          <button class="minus" ng-click="breakLengthChange(-1)">-</button><span class="time">  {{breakLength}}  </span>
+          <button class="plus" ng-click="breakLengthChange(1)">+</button>
+        </div>
+
+        <div class="sessionCtrl">
+          <p>session length</p>
+          <button class="minus" ng-click="sessionLengthChange(-1)">-</button><span class="time">  {{sessionLength}}  </span>
+          <button class="plus" ng-click="sessionLengthChange(1)">+</button>
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <section ng-click="toggleTimer()">
+
+      <div class="timer">
+        <p class="title">{{sessionName}}</p>
+        <p>{{timeLeft}}</p><span class="fill" ng-style="{'height':fillHeight, 'background':fillColor }"></span>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script>
+
+<!-- This is imported file developed by google..
+  AngularJS v1.3.2
+  (c) 2010-2014 Google, Inc. http://angularjs.org
+  License: MIT
+
+  AngularJS is a structural framework for dynamic web apps.
+  With AngularJS, designers can use HTML as the template language 
+  and it allows for the extension of HTML's syntax to convey the application's components effortlessly.
+  Angular makes much of the code you would otherwise have to write completely redundant.
+-->
+
+  <script src="/session timer/script.js"></script>
+
+</body>
+
+</html>

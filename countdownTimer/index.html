@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count-down timer</title>
+
+    <link rel="icon" type="image/jpg" href="/images/icon.png" />
+
+    <link rel="stylesheet" href="/countdownTimer/style.css" />
+
+    <script> window.console = window.console || function (t) { };</script>
+
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+
+</head>
+<body>
+    <div class="topnav">
+        <a href="#" onclick="close_window();return false;">Exit Fullscreen</a>
+        <script>
+          var app = angular.module('Application', []);
+
+          function close_window() {
+          close();
+          }
+
+        </script>
+    </div>
+    
+    <h1>Count_Down Timer</h1>
+
+    <main>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <div class="timer"></div>
+      <script src="script.js"></script>
+    </main>
+    
+</body>
+</html>

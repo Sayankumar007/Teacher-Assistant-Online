@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300);
+
+
+* {
+  margin: 0;
+  font-family: Open Sans, Arial;
+}
+
+html, body, main {
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-image: linear-gradient(162deg, red , black 31%);   /*using gradients*/
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  font-size: 15px;
+  padding-right: 15px;
+  text-decoration: underline;
+}
+
+h1 {
+  display: block;
+  background-image: linear-gradient(160deg, red , black 20%);   /*using gradients*/
+  margin: 0 auto;
+  color: #f1c650;
+  text-shadow: 0 0 0px rgb(219, 91, 68), 0 0 50px #f2c94c;
+  text-align: center;
+  font-family: "Pacifico";
+  font-size: 5em;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+header .session {
+  font-size: 1em;
+  display: flex;
+  font-style: bold;
+  color: #4bf74b;
+  text-shadow: 0 0 0px rgb(219, 91, 68), 0 0 50px #7bf833 ;
+}
+
+header .session .breakCtrl, header .session .sessionCtrl {
+  display: inline;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+header .session .minus, header .session .plus {
+  
+  background-color: #5335c0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  outline: none;
+}
+
+header .session .time {
+  font-size: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #d526ec;
+  text-shadow: 0 0 0px rgb(219, 91, 68), 0 0 50px #2d5df8 ;
+}
+
+
+section {
+  background-image: linear-gradient(to bottom right, black 60%, red);
+  height: 100%;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 0 0px rgb(219, 91, 68), 0 0 20px #a50202;
+}
+
+section .title {
+  text-align: center;
+  line-height: 180px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #2b7bf3;
+  text-shadow: 0 0 0px rgb(219, 91, 68), 0 0 20px #0b0380;
+}
+
+section .timer {
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  font-size: 4em;
+  border: 4px solid #4700cc;
+  border-radius: 60%;
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+  overflow: hidden;
+}
+
+section .timer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 60%;
+  z-index: 2;
+  border: 4px solid #070202;
+}
+
+section .fill {
+  content: "";
+  position: absolute;
+  background: #eb8a0b;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}

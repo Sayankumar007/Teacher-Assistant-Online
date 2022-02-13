@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do List</title>
+
+    <link rel="icon" type="image/jpg" href="/images/icon.png" />
+
+    <link rel="stylesheet" href="/to-do list/style.css" />
+    <script> window.console = window.console || function (t) { };</script>
+
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="#" onclick="close_window();return false;">Exit Fullscreen</a>
+        <script src="script.js"></script>
+    </div>
+
+    <h1>To-do List</h1>
+
+    <main>
+        <iframe src="/to-do list/to-doList.html" id="Iframe" height="425" width="800" style="border-radius:8px;border:none"></iframe>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
+    
+    

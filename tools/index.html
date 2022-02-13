@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teacher Assistant Online</title>
+
+    <link rel="icon" type="image/jpg" href="/images/icon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- library for popular icons -->
+    
+</head>
+
+
+<body>
+    <header>
+        <div class="title">
+        <span class="images"><img src="/images/icon.png" width="95px"></span>
+        <span class="name">Teacher Assistant Online</span>
+        </div>
+
+        <div class="topnav" id="navbar">
+            <a href="/index.html">Home</a>
+            <a class="active" href="/tools/index.html">Tools</a>
+            <a href="/about us/index.html">About Us</a>
+            <a href="/user guide/index.html">User Guide</a>
+        </div>
+        
+    </header>
+
+   
+
+    <main>
+  
+        <span class="tab">
+            <button class="tablinks" onclick="openTab(event, 'sessionTimer')" id="defaultOpen">Session Timer</button>
+            <button class="tablinks" onclick="openTab(event, 'namePicker')">Name Picker</button>
+            <button class="tablinks" onclick="openTab(event, 'to-do list')">To-Do list</button>
+            <button class="tablinks" onclick="openTab(event, 'timer')">Count_Down Timer</button>
+            <button class="tablinks" onclick="openTab(event, 'stopwatch')">Stopwatch</button>
+        </span>
+          
+        <span id="sessionTimer" class="tabcontent">
+            <div style="padding-bottom: 10px;font-style:underline;color:blue;font-weight:600">
+            <a href="/session timer/index.html" target="_blank">Click Here To Use This Tool In FullScreen Mode</a>
+            </div>
+            <div>
+                <iframe src="/session timer/index.html" id="Iframe" height="500" width="1000" style="border-radius:8px;border:none"></iframe>
+                <script src="script.js"></script>
+            </div>
+            
+        </span>
+          
+        <span id="namePicker" class="tabcontent">
+            <div style="padding-bottom: 10px;font-style:underline;color:blue;font-weight:600">
+                <a href="/name picker/index.html" target="_blank">Click Here To Use This Tool In FullScreen Mode</a>
+            </div>
+            <div>
+                <iframe src="/name picker/index.html" id="Iframe" height="600" width="1000" style="border-radius:8px;border:none"></iframe>
+                <script src="script.js"></script>
+            </div>
+        </span>
+
+        <span id="to-do list" class="tabcontent">
+            <div style="padding-bottom: 10px;font-style:underline;color:blue;font-weight:600">
+                <a href="/to-do list/index.html" target="_blank">Click Here To Use This Tool In FullScreen Mode</a>
+            </div>
+            <div>
+                <iframe src="/to-do list/to-doList.html" id="Iframe" height="600" width="1000" style="border-radius:8px;border:none"></iframe>
+                <script src="script.js"></script>
+            </div>
+        </span>
+
+        <span id="timer" class="tabcontent">
+            <div style="padding-bottom: 10px;font-style:underline;color:blue;font-weight:600">
+                <a href="/countdownTimer/index.html" target="_blank">Click Here To Use This Tool In FullScreen Mode</a>
+            </div>
+            <div>
+                <iframe src="/countdownTimer/index.html" id="Iframe" height="600" width="1000" style="border-radius:8px;border:none"></iframe>
+                <script src="script.js"></script>
+            </div>
+        </span>
+          
+        <span id="stopwatch" class="tabcontent">
+            <div style="padding-bottom: 10px;font-style:underline;color:blue;font-weight:600">
+                <a href="/stopwatch/index.html" target="_blank">Click Here To Use This Tool In FullScreen Mode</a>
+            </div>
+            <div>
+                <iframe src="/stopwatch/index.html" id="Iframe" height="600" width="1000" style="border-radius:8px;border:none"></iframe>
+                <script src="script.js"></script>
+            </div>
+        </span>
+          
+        <script src="script.js"></script>
+        
+    </main>
+
+
+
+    <footer>
+
+        <div class="thanks">Thank You For Visiting The Website.. <br> Feel Free To Contact Us..</div>
+
+        <div class="socialMedia">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

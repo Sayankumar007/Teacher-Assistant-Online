@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+}
+
+html, body{
+    margin: 0;
+}
+
+
+header{
+  justify-content: center;
+  background-image: linear-gradient(160deg, red , black 40%, red 200%);
+  color: rgba(251, 255, 9, 0.924);
+  text-shadow: royalblue;
+  height: 3%;
+  width: 100%;
+  justify-items: center;
+  text-align: center;
+  font-size: 5em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 5px;
+}
+
+/* Add a black background color to the top navigation */
+header .topnav {
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+}
+  /* Style the links inside the navigation bar */
+header .topnav a {
+    align-content: left;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 4px 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+  /* Change the color of links on hover */
+header .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  /* Add a color to the active/current link */
+header .topnav a.active {
+    background-color: rgba(22, 168, 253, 0.829);
+    color: white;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+header .images {
+    float: left;
+    padding-top: 08px;
+    padding-left: 16px;
+}
+
+
+
+
+
+
+main{
+  display: inline-flex;
+  background-image: linear-gradient(160deg, red , black 5%, red 500%);
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the tab */
+main .tab {
+  padding-block-end: 8px;
+  padding-top: 26px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(160deg, rgb(35, 78, 208), rgb(67, 34, 196));
+  width: 20%;
+  height: 900px;
+  margin: 15px 7.5px 15px 15px;
+  border-radius: 10px;
+  }
+  
+  /* Style the buttons inside the tab */
+main .tab button {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    text-align: left;
+    background-color: #f5900bc6;
+    color: rgb(251, 248, 248);
+    font-size: 15px;
+    width: 90%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+main .tab button:hover {
+    background-color: rgba(101, 228, 11, 0.557);
+    font-weight: bold;
+  }
+  
+  /* Create an active/current "tab button" class */
+main .tab button.active {
+    background-color: yellow;
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  /* Style the tab content */
+main .tabcontent {
+    background-image: linear-gradient(160deg, rgb(241, 207, 53), rgb(236, 120, 42));
+    color: black;
+    padding: 26px;
+    width: 85%;
+    margin: 15px 15px 15px 7.5px ;
+    border-radius: 10px;
+}
+
+main #team .collapsible {
+    background-color: rgb(247, 143, 8);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 4px;
+    width: 100%;
+    border: 2px solid #c50b0b;
+    text-align: left;
+    outline: none;
+    font-size:1.5em;
+    font-family:'Times New Roman';
+    font-weight: 700;
+}
+  
+main #team .active, .collapsible:hover {
+    background-color: rgb(245, 120, 18);
+    border: 2px solid #be0404;
+    
+}
+  
+main #team .collapsible:after {
+    content: '\002B';
+    color: rgb(10, 14, 243);
+    font-weight: bolder;
+    float: right;
+    margin-right: 15px;
+}
+  
+main #team .active:after {
+    content: "\2212";
+}
+  
+main #team .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-image: linear-gradient(160deg,rgb(236, 120, 42),rgb(241, 207, 53));
+}
+
+main #members .container {
+  border: 8px solid rgb(92, 91, 91);
+  background-color: rgb(138, 189, 194);
+  border-radius: 5px;
+  padding: 16px;
+  padding-bottom: -16px;
+  margin: 1em 0px 3em 0px
+}
+
+main #members .container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+main #members .container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+main #members .container span {
+  float: left;
+  font-size: 20px;
+  padding-bottom: 15px;
+  margin-right: 20px;
+}
+
+@media (max-width: 500px) {
+main #members .container {
+      text-align: center;
+}
+
+main #members .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+
+
+h3{
+  font-size: 1.5em;
+  width: 100%;
+  background-color: rgb(245, 120, 18);
+  border: 2px solid #be0404;
+  padding: 4px;
+  
+}
+
+h2{
+  font-size: 2.5em;
+}
+
+main .contactForm {
+    display: block;
+    color: thistle;
+    background-image: linear-gradient(160deg, rgb(5, 99, 192), rgb(12, 23, 223));
+    width:20%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+  }
+
+
+
+
+
+footer{
+    align-content: bottom;
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    background-color: rgb(66, 28, 10);
+}
+
+footer .thanks{
+    padding-bottom: 30px;
+    background-color: transparent;
+}
+
+/* Style all font awesome icons */
+footer .fa {
+    
+    align-content: center;
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+/* Add a hover effect if you want */
+footer .fa:hover {
+    opacity: 0.7;
+}
+  
+/* Set a specific color for each brand */
+  
+/* Facebook */
+footer .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+/* Twitter */
+footer .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+footer .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+footer .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+footer .fa-instagram {
+    background-image: url("/images/background.jfif");
+    color: white;
+  }

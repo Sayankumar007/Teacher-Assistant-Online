@@ -1,0 +1,102 @@
+
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300);
+
+* {
+    margin: 0;
+  }
+
+body {
+    background-color: black;
+    color: #f8b422;
+  }
+
+  /* Add a black background color to the top navigation */
+.topnav {
+  background-image: linear-gradient(160deg, red , black 28.5%);   /*using gradients*/
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  font-size: 15px;
+  padding-right: 15px;
+  text-decoration: underline;
+}
+  
+  h1 {
+    display: block;
+    background-image: linear-gradient(150deg, red , black 20%);   /*using gradients*/
+    margin: 0 auto;
+    color: #f1c650;
+    text-shadow: 0 0 0px rgb(219, 91, 68), 0 0 50px #f2c94c;
+    text-align: center;
+    font-family: "Pacifico";
+    padding-bottom: 30px;
+    font-size: 5em;
+  }
+  
+  .circle {
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  font-size: 4em;
+  border: 6px solid #4700cc;
+  border-radius: 60%;
+  cursor: pointer;
+  position: relative;
+  z-index: 40;
+  overflow: hidden;
+  }
+  
+  .time {
+    position: relative;
+    top: 2em;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    font-size: 48px;
+    color: #f81515;
+    text-shadow: 0 0 0px rgb(238, 47, 47), 0 0 50px #f12a45;
+  }
+
+  section{
+    background-image: linear-gradient(150deg, black 80%, red);
+    height: 100%;
+    margin-bottom: 0px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 187px;
+  }
+  
+  button {
+    align-content: center;
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+    border: none;
+    outline: none;
+  }*/
+  
+  #playButton {
+    display: block;
+  }
+  
+  #pauseButton {
+    
+    display: none;
+  }

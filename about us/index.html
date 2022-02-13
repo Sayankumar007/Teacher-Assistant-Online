@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teacher Assistant Online</title>
+
+    <link rel="icon" type="image/jpg" href="/images/icon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- library for popular icons -->
+    
+</head>
+
+
+<body>
+    <header>
+        <div class="title">
+        <span class="images"><img src="/images/icon.png" width="95px"></span>
+        <span class="name">Teacher Assistant Online</span>
+        </div>
+
+        <div class="topnav" id="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/tools/index.html">Tools</a>
+            <a class="active" href="/about us/index.html">About Us</a>
+            <a href="/user guide/index.html">User Guide</a>
+        </div>
+        
+    </header>
+
+   
+
+    <main>
+  
+        <span class="tab">
+            <button class="tablinks" onclick="openTab(event, 'team')" id="defaultOpen">Know our Team</button>
+            <button class="tablinks" onclick="openTab(event, 'members')">Team Members</button>
+            <button class="tablinks" onclick="openTab(event, 'links')">Important Links</button>
+        </span>
+          
+        <span id="team" class="tabcontent">
+            <h2>Know Our Team</h2>
+            <hr style="width:95%;margin-top:10px;margin-bottom:30px;border-top: 2px solid black;">
+
+            <h3>Introduction</h3>    
+            <p style="padding-top: 8px;padding-bottom: 8px;font-size:18px;"> 
+                The Dark Order is a Self-Funded Developer Team, which created basically for The Development of Web-Applications and
+                Android Applications.
+                <br>
+            </p>
+
+            <button class="collapsible">Establishment</button>
+            <div class="content">
+                <p style="padding-top: 8px;padding-bottom: 8px;font-size:18px;margin: 5px;">
+                   The Dark Order has been created by Sayan Kumar Bhowmick, Arnab Mukherjee and Dhiraj Thakur in January,
+                   2022. It was created for the Event "Hack With Agora" organised by The Company Agora.io for the 1st and 2nd 
+                   Year B.tech Students.
+                   <br>
+                   Aroga.io is a Company that basically host SDKs for Video-Calling, Voice-Calling, Live Vide-streaming,
+                   Messaging, Two-Way Communications etc. (referring to the Important Links section to know more about Agora.io)
+                </p>
+            </div>
+
+            <button class="collapsible">Purpose</button>
+            <div class="content">
+                <p style="padding-top: 8px;padding-bottom: 8px;font-size:18px;margin: 5px;">
+                    The Purpose of The Dark Order is to provide Advanced Facilities in an innovative way, in the form of
+                    Web-based and Android Applications. We are Working on Various Issues related to Online-Education,
+                    Medical Emergencies, and Entertainment of Those Persons who spends almost 24 hours in a very busy schedule.
+                    <br>
+                    We are Planning to Provide our Services all over India and Abroad also. In this days, Knowledge of the
+                    Digital World is Mandatory for all and we are designing our tools in a simple down-to-earth manner, so that
+                    it can be easily used by Children and Senior Citizens Who are not so familiar with Technologies.
+                </p>
+            </div>
+
+            <button class="collapsible">Projects</button>
+            <div class="content">
+                <p style="padding-top: 8px;padding-bottom: 8px;font-size:18px;margin: 5px;">
+                    This Web-Application, "Teacher Assistant Online" is The First Project of The Dark Order and
+                    We are Planning 100+ Projects that will be published by the end of 2025. All The Projects will
+                    be based on Education, Medical Isues, and Entertainment Purposes. Temporarily we are taking the business
+                    purposes at a corner-side but we will soon start working on those types of projects also.
+                </p>
+            </div>
+
+            <button class="collapsible">Acknowlegements</button>
+            <div class="content">
+                <p style="padding-top: 8px;padding-bottom: 8px;font-size:18px;margin: 5px;">
+                    Agora.io<br>w3schools.com<br>Google Fonts Database<br>Javascript Libraries
+                </p>
+            </div>
+                
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+                
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } 
+                else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
+            </script>
+
+        </span>
+          
+        <span id="members" class="tabcontent">
+            <h2>Team Members</h2>
+            <hr style="width:95%;margin-top:20px;margin-bottom:30px;border-top: 2px solid black;">
+
+            <h4 style="font-size: x-large;width: 100%;background-color: rgb(245, 120, 18);padding: 4px;">Team Leader</h4>
+
+            <div class="container">
+                <a href="/images/dheeraj.jpg" target="_blank"><img src="/images/dheeraj1.jpg" style="width:90px"></a>
+                <p><span>Dhiraj Thakur</span>
+                Bachelor of Technology, 1st Year<br>Department of Electronics Engineering<br>Jalpaiguri Government Engineering College
+                </p>
+                <p style="margin: 15px;">
+                    Contact Number : 8777288975 <br>
+                    Email Id       : <i>thakurdhiraj686@gmail.com</i>
+                </p>
+            </div>
+
+            <h4 style="font-size: x-large;width: 100%;background-color: rgb(245, 120, 18);padding: 4px;">Web Developers</h4>
+
+            <div class="container">
+                <a href="/images/sayan.jpg" target="_blank"><img src="/images/sayan1.jpg" style="width:90px"></a>
+                <p><span>Sayan Kumar Bhowmick<br><i>(Main FullStack Developer)</i></span>
+                Bachelor of Technology, 1st Year<br>Department of Computer Science Engineering<br>Jalpaiguri Government Engineering College
+                </p>
+                <p style="margin: 15px;">
+                    Contact Number : 6291206532<br>
+                    Email Id       : <i>sayankr007@gmail.com</i>
+                </p>
+            </div>
+            <div class="container">
+                <a href="/images/arnab.jpg" target="_blank"><img src="/images/arnab1.jpg" style="width:90px"></a>
+                <p><span>Arnab Mukherjee<br><i>(Assistant Developer)</i></span>
+                Bachelor of Technology, 1st Year<br>Department of Computer Science Engineering<br>Jalpaiguri Government Engineering College
+                </p>
+                <p style="margin: 15px;">
+                    Contact Number : 7044621221<br>
+                    Email Id       : <i>2025.cse24.arnabmukherjee@gmail.com</i>
+                </p>
+            </div>
+            
+        </span>
+          
+        <span id="links" class="tabcontent">
+            <h2>Important Links</h2>
+            <hr style="width:95%;margin-top:20px;margin-bottom:30px;border-top: 2px solid black;">
+            <div style="display: linline-flex;font-size: larger;">
+                Agora website    :   <a href="https://www.agora.io/en/" target="_blank">https://www.agora.io/en/</a><br><br>
+                How to Use Tools :   <a href="/user guide/index.html">User Guide</a><br><br>
+                w3schools : <a href="https://www.w3schools.com" target="_blank">Click here to goto their site</a>
+            </div>
+        </span>
+          
+        <script>
+            function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+          
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+          
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+          
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+          
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+          
+        </script>
+
+        <span class="contactForm">
+            <div style="font-size:larger; font-weight: 700;text-align: center;padding-top:10px;padding-bottom: 10px;">Contact Us</div>
+
+            <form style="padding-left: 8px;" method="post" name="contact_form"
+                action="/email.php">
+                Your Name:
+                <input type="text" name="name">
+                Phone Number:
+                <input type="number" name="phnumber">
+                Email Address:
+                <input type="text" name="email">
+                Message:
+                <textarea name="message"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+
+            <script language="JavaScript">
+                var frmvalidator  = new Validator("contactform");
+                frmvalidator.addValidation("name","req","Please provide your name");
+                frmvalidator.addValidation("email","req","Please provide your email");
+                frmvalidator.addValidation("email","email","Please enter a valid email address");
+            </script>
+        </span>
+        
+    </main>
+
+
+
+    <footer>
+
+        <div class="thanks">Thank You For Visiting The Website.. <br> Feel Free To Contact Us..</div>
+
+        <div class="socialMedia">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+        
+    </footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
